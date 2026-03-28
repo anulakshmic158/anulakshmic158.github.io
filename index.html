@@ -13,76 +13,54 @@ body {
     color: #ccd6f6;
 }
 
-/* HERO */
-.hero {
+header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
-.hero h1 {
+h1 {
     color: #64ffda;
-    font-size: 42px;
-}
-
-.hero p {
-    color: #8892b0;
-}
-
-/* SECTION */
-.section {
-    padding: 50px 10%;
+    font-size: 40px;
 }
 
 h2 {
     color: #64ffda;
-    margin-bottom: 20px;
+    border-bottom: 2px solid #233554;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-/* ABOUT */
-.about {
-    max-width: 700px;
+.section {
+    padding: 50px 10%;
 }
 
-/* PROJECTS */
-.projects {
+.card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.project-card {
+.card {
     background: #112240;
-    border-radius: 12px;
-    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.project-card:hover {
-    transform: translateY(-8px);
+.card:hover {
+    transform: translateY(-5px);
+    background: #233554;
 }
 
-/* IMAGE */
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* CONTENT */
-.project-content {
-    padding: 15px;
+li {
+    margin: 8px 0;
 }
 
-.project-content h3 {
-    color: #64ffda;
-}
-
-.project-content p {
-    font-size: 14px;
-    color: #8892b0;
-}
-
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
@@ -93,61 +71,70 @@ footer {
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
+<header>
     <h1>Anulakshmi C</h1>
-    <p>Embedded Systems | PCB Design | IoT</p>
-</div>
+    <p>Embedded Systems & PCB Design Engineer</p>
+    <p>STM32 | IoT | Real-Time Systems</p>
+</header>
 
-<!-- ABOUT -->
-<div class="section about">
+<section class="section">
     <h2>About</h2>
     <p>
-        M.Tech student in VLSI & Embedded Systems with hands-on experience in STM32, PCB design, and IoT systems. Passionate about building real-world hardware solutions.
+        I am an aspiring M.Tech student specializing in VLSI and Embedded Systems with strong interest in embedded design, PCB development, and IoT systems. I enjoy building real-world hardware solutions using STM32, Arduino, and ESP modules.
     </p>
-</div>
+</section>
 
-<!-- PROJECTS -->
-<div class="section">
+<section class="section">
+    <h2>Skills</h2>
+    <div class="card-container">
+        <div class="card">STM32, Arduino, ESP</div>
+        <div class="card">Embedded C, Verilog</div>
+        <div class="card">PCB Design (Altium)</div>
+        <div class="card">UART, SPI, I2C, Ethernet</div>
+        <div class="card">RTOS Concepts</div>
+        <div class="card">IoT Systems</div>
+    </div>
+</section>
+
+<section class="section">
     <h2>Projects</h2>
+    <div class="card-container">
 
-    <div class="projects">
-
-        <div class="project-card">
-            <img src="https://via.placeholder.com/400x200" alt="">
-            <div class="project-content">
-                <h3>Digital Ammeter</h3>
-                <p>PCB-based current measurement using MAX4172 & MCP3425.</p>
-            </div>
+        <div class="card">
+            <h3>Digital Ammeter</h3>
+            <p>PCB-based current measurement using MAX4172 & MCP3425 with 7-segment display.</p>
         </div>
 
-        <div class="project-card">
-            <img src="https://via.placeholder.com/400x200" alt="">
-            <div class="project-content">
-                <h3>Grid Monitoring</h3>
-                <p>Real-time voltage, current & frequency monitoring system.</p>
-            </div>
+        <div class="card">
+            <h3>Grid Monitoring System</h3>
+            <p>Real-time voltage, current, and frequency measurement using STM32.</p>
         </div>
 
-        <div class="project-card">
-            <img src="https://via.placeholder.com/400x200" alt="">
-            <div class="project-content">
-                <h3>IoT Pet Feeder</h3>
-                <p>Smart feeding system controlled via mobile app.</p>
-            </div>
+        <div class="card">
+            <h3>IoT Pet Feeder</h3>
+            <p>Mobile-controlled automated feeding system using IoT.</p>
+        </div>
+
+        <div class="card">
+            <h3>Winch Control System</h3>
+            <p>STM32-based motor control with Ethernet communication for sonar system.</p>
         </div>
 
     </div>
-</div>
+</section>
 
-<!-- CONTACT -->
-<div class="section">
+<section class="section">
     <h2>Contact</h2>
-    <p>Email: anulakshmic158@gmail.com</p>
-</div>
+    <ul>
+        <li>Email: anulakshmic158@gmail.com</li>
+        <li>Phone: +91 8714240804</li>
+        <li>Location: Kerala, India</li>
+        <li>LinkedIn: linkedin.com/in/anulakshmic</li>
+    </ul>
+</section>
 
 <footer>
-    <p>© 2026 Anulakshmi C</p>
+    <p>© 2026 Anulakshmi C | Portfolio</p>
 </footer>
 
 </body>
