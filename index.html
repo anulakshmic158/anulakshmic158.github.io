@@ -1,24 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Anulakshmi C | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anulakshmi C | Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a192f;
+    color: #ccd6f6;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    color: #64ffda;
+    font-size: 40px;
+}
+
+h2 {
+    color: #64ffda;
+    border-bottom: 2px solid #233554;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section {
+    padding: 50px 10%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #112240;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #233554;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020c1b;
+}
+</style>
 </head>
 
-<body style="margin:0; font-family:Arial; background:#0a192f; color:white; text-align:center;">
+<body>
 
-    <h1 style="margin-top:50px;">Anulakshmi C</h1>
-    <h3>Embedded Systems & PCB Design Engineer</h3>
+<header>
+    <h1>Anulakshmi C</h1>
+    <p>Embedded Systems & PCB Design Engineer</p>
+    <p>STM32 | IoT | Real-Time Systems</p>
+</header>
 
-    <p style="width:60%; margin:auto;">
-        I am an aspiring M.Tech student specializing in VLSI and Embedded Systems,
-        with a strong interest in embedded system design, PCB development, and IoT.
+<section class="section">
+    <h2>About</h2>
+    <p>
+        I am an aspiring M.Tech student specializing in VLSI and Embedded Systems with strong interest in embedded design, PCB development, and IoT systems. I enjoy building real-world hardware solutions using STM32, Arduino, and ESP modules.
     </p>
+</section>
 
-    <h2 style="margin-top:40px;">Projects</h2>
-    <p>Digital Ammeter | IoT Pet Feeder | Grid Monitoring System</p>
+<section class="section">
+    <h2>Skills</h2>
+    <div class="card-container">
+        <div class="card">STM32, Arduino, ESP</div>
+        <div class="card">Embedded C, Verilog</div>
+        <div class="card">PCB Design (Altium)</div>
+        <div class="card">UART, SPI, I2C, Ethernet</div>
+        <div class="card">RTOS Concepts</div>
+        <div class="card">IoT Systems</div>
+    </div>
+</section>
 
-    <h2 style="margin-top:40px;">Contact</h2>
-    <p>Email: anulakshmic158@gmail.com</p>
+<section class="section">
+    <h2>Projects</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Digital Ammeter</h3>
+            <p>PCB-based current measurement using MAX4172 & MCP3425 with 7-segment display.</p>
+        </div>
+
+        <div class="card">
+            <h3>Grid Monitoring System</h3>
+            <p>Real-time voltage, current, and frequency measurement using STM32.</p>
+        </div>
+
+        <div class="card">
+            <h3>IoT Pet Feeder</h3>
+            <p>Mobile-controlled automated feeding system using IoT.</p>
+        </div>
+
+        <div class="card">
+            <h3>Winch Control System</h3>
+            <p>STM32-based motor control with Ethernet communication for sonar system.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact</h2>
+    <ul>
+        <li>Email: anulakshmic158@gmail.com</li>
+        <li>Phone: +91 8714240804</li>
+        <li>Location: Kerala, India</li>
+        <li>LinkedIn: linkedin.com/in/anulakshmic</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Anulakshmi C | Portfolio</p>
+</footer>
 
 </body>
 </html>
